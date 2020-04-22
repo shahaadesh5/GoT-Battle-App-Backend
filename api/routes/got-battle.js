@@ -57,11 +57,7 @@ router.get('/search', (req,res,next)=>{
     ]})
     .exec()
     .then(result=>{
-        let count = Object.keys(result).length;
-        res.status(200).json({
-            result: result,
-            count: count
-        })
+        res.status(200).json(result)
     })
     .catch(error=>{
         console.log(error);
