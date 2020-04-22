@@ -7,9 +7,9 @@ The application can be viewed at https://got-battle-app-backend.herokuapp.com/
 
 Following are the API's developed:
 
-1. https://got-battle-app-backend.herokuapp.com/list/ - Retrieves a list of all the places where battles have taken place.
-2. https://got-battle-app-backend.herokuapp.com/count - Retrieves the total number of battles occured
-3. https://got-battle-app-backend.herokuapp.com/search - Expects parameters to be passed to look for individual records based on parameters. Valid parameters are: king, location, type
+1. https://got-battle-app-backend.herokuapp.com/got-api/list/ - Retrieves a list of all the places where battles have taken place.
+2. https://got-battle-app-backend.herokuapp.com/got-api/count - Retrieves the total number of battles occured
+3. https://got-battle-app-backend.herokuapp.com/got-api/search - Expects parameters to be passed to look for individual records based on parameters. Valid parameters are: king, location, type
 
 ### Desktop View:
 
