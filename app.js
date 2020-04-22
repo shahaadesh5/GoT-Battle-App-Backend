@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser'); //body-parser used to get form data
 const apiRoute = require('./api/routes/got-battle');
 require('dotenv').config();
+const path = require('path');
 
 //setting boy-parser form-data limit 
 app.use(bodyParser.json({limit: '5mb'}));
@@ -34,5 +35,11 @@ app.use((req, res, next) => {
 //running the route
 
 app.use('/got-api', apiRoute);
+
+app.use(express.static(path.join(__dirname, 'build'))); //defining the directory name for the path
+
+app.get('*', (req,res)=>{
+    res.sendFile(path.join(__dirname,'build/index.html')); // defining the path for running the index.html file on the express app
+})
 
 module.exports = app;
