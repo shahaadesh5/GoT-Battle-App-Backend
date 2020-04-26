@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+  font-family: 'Ubuntu';
+}
 .App{
+  margin: 25px;
+  background: url('assets/bg.png');
+  background-repeat: repeat;
   padding: 15px;
+}
+body{
+  background: url('http://getwallpapers.com/wallpaper/full/1/2/e/277419.jpg');
+  background-repeat: no-repeat;
 }
 h1{
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2{
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 9px;
+  border-radius: 30px;
+  background: #212121;
+  color: #f4f4f4;
+}
+p{
+  font-size: 20px;
 }
 .grid_container{
   flex-grow: 1;
@@ -12,17 +36,19 @@ h1{
   margin: auto !important;
 }
 img{
-  width: 70%;
+  width: 100%;
   display: block;
   margin: 0 auto; 
 }
 .battle-wrapper{
-  margin: 10px 0;
+  margin: 25px 0;
   padding: 5px;
   padding-bottom: 20px;
   overflow: hidden;
   text-align: center;
+  background: url('assets/bg1.png');
   border-bottom: 1px solid grey;
+  background-repeat: repeat;
 }
 .MuiAvatar-root{
   position: absolute !important;
@@ -30,33 +56,64 @@ img{
   height: 80px !important;
   left: 50%;
   top: 50%;
-  margin: 0 0 -40px -40px;
+  margin: -40px 0 0 -40px;
+  border: 1px solid red;
 }
 .king-card{
   padding: 5px;
   transition: all 0.5s ease;
   cursor: pointer;
+  background: #fff;
 }
-.attacker:hover{
-  background: #f50057;
-  color: #fff;
+.king-card:hover{
+  background: #f4f4f4;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
-.attacker:hover .MuiChip-outlinedSecondary{
-  color: #fff;
-  border-color: #fff;
+.king-card p {
+  font-size: 16px;
 }
-.defender:hover{
-  background: #3f51b5;
-  color: #fff;
+hr{
+  width: 70%;
 }
-.defender:hover .MuiChip-outlinedPrimary{
-  color: #fff;
-  border-color: #fff;
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid;
+  cursor: pointer;
+  margin: 10px auto;
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  margin-left: -75px;
+  border: 3px solid #fff;
+}
+.king-cover{
+  height: 250px;
+  position: relative;
+  background-image: url('https://images.hdqwalls.com/download/throne-game-of-thrones-qhd-2880x1800.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.highlight{
+  font-weight: 600;
+  color: #636363;
+}
+.army-color{
+  color: #899b9b;
+}
+.MuiChip-outlined{
+  margin-top: 65px;
+}
+.MuiAvatar-colorDefault{
+  background-color: #212121 !important;
+}
+.relative-card{
+  position: relative;
+  height: 100%;
 }
 @media screen and (max-width:599px){
-  img{
-    width: 35%;
-  }
   .MuiAvatar-root{
     position: relative !important;
     top: auto;
