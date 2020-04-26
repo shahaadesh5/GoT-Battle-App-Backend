@@ -10,7 +10,6 @@
 }
 body{
   background: url('http://getwallpapers.com/wallpaper/full/1/2/e/277419.jpg');
-  background-repeat: no-repeat;
 }
 h1{
   text-align: center;
@@ -24,6 +23,11 @@ h2{
   border-radius: 30px;
   background: #212121;
   color: #f4f4f4;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+h2:hover{
+  background-color: #453415;
 }
 p{
   font-size: 20px;
@@ -88,6 +92,15 @@ hr{
   left: 50%;
   margin-left: -75px;
   border: 3px solid #fff;
+  transition: all 0.5s ease;
+}
+.king-card:hover .circle {
+  border-color: #453415;
+}
+.king-card:hover .MuiChip-outlined{
+  border-color: #453415;
+  background-color: #453415;
+  color: #fff;
 }
 .king-cover{
   height: 250px;
